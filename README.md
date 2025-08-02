@@ -15,7 +15,7 @@ A documentação é parcial e pode ser entendida de forma completa primeiro estu
 
 # Ligação
 
-...
+![SCH](images/SCH.PNG)
 
 # Exemplos 
 Imagens da captura do osciloscópio, pulsos configurados em 25, 70 e 10 millisegundos, respectivamente:

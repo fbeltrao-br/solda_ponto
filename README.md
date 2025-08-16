@@ -9,7 +9,7 @@ A documentação é parcial e pode ser entendida de forma completa primeiro estu
 1. Arduino Nano (Atmega328p)
 2. Display OLED 1.3" I2C 12864 (SH1106G)
 3. Fim de curso mecânico RAMPS 1.4
-4. Relé de estádo sólido (SSR) 40A
+4. Relé de estádo sólido (SSR) 40A DA (DC/AC)
 5. Encoder / Decoder rotativo KY-040
 6. Alto-falante / buzzer piezo passivo de 12mm e 3.3-5v (opcional)¹
 

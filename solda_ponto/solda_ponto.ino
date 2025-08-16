@@ -133,18 +133,18 @@ void drawScreen() {
   display.setTextSize(1);
   display.setTextColor(SH110X_WHITE);
   display.setFont(&FreeMonoOblique9pt7b);
-  showCenteredText(27, String("PULSO"));
-  showCenteredText(46, String(counter) + ("ms"));
+  showCenteredText(27, "PULSO");
+  showCenteredText(46, String(counter) + "ms");
   if (editMode == 1) {
     uint32_t currentBlinkTimer = millis();
     if (currentBlinkTimer - previousBlinkTimer >= blinkInterval) {
       previousBlinkTimer = currentBlinkTimer;
       toggleBlink = !toggleBlink;
-      if (toggleBlink) {
-        display.setFont();
-        if (counter > MIN_POWER) display.drawChar(7, 38, '<', SH110X_WHITE, SH110X_BLACK, 1);
-        if (counter < MAX_POWER) display.drawChar(115, 38, '>', SH110X_WHITE, SH110X_BLACK, 1);
-      }
+    }
+    if (toggleBlink) {
+      display.setFont();
+      if (counter > MIN_POWER) display.drawChar(7, 38, '<', SH110X_WHITE, SH110X_BLACK, 1);
+      if (counter < MAX_POWER) display.drawChar(115, 38, '>', SH110X_WHITE, SH110X_BLACK, 1);
     }
   }
   display.display();
